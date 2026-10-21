@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fbf7d5">
+    <meta name="description" content="A little digital closet for your favorite outfits.">
+    <title>thimbley</title>
+    <link rel="icon" href="assets/pink flower button.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main>
+      <section class="screen home-screen" id="home-screen" data-page="home" aria-labelledby="welcome-heading">
+        <img class="home-welcome" src="assets/welcome text.png" alt="Welcome to">
+        <h1 id="welcome-heading" class="visually-hidden">Welcome to Thimbley</h1>
+        <img class="home-title" src="assets/thimbley title screen.png" alt="Thimbley">
+        <button class="start-button" id="start-button" type="button">
+          <img src="assets/start button text.png" alt="Start">
+        </button>
+        <img class="page-decoration home-blue-star" src="assets/blue star button.png" alt="">
+        <img class="page-decoration home-pink-flower" src="assets/pink flower button.png" alt="">
+        <img class="page-decoration home-white-button" src="assets/white button.png" alt="">
+        <img class="page-decoration home-blue-stripe" src="assets/blue stripe button.png" alt="">
+        <img class="page-decoration home-yellow-star" src="assets/yellow star button.png" alt="">
+        <img class="page-decoration home-pink-star" src="assets/pink star button.png" alt="">
+        <img class="page-decoration home-pink-white-flower" src="assets/pink white flower button.png" alt="">
+        <div class="stitched-border" aria-hidden="true"></div>
+      </section>
+
+      <section class="screen loading-screen" id="loading-screen" data-page="loading" aria-label="Loading your closet" hidden>
+        <img class="loading-copy" src="assets/loading text.png" alt="Loading">
+        <img class="loading-spiral" src="assets/loading spiral.png" alt="">
+        <div class="stitched-border" aria-hidden="true"></div>
+      </section>
+
+      <section class="screen closet-screen" id="closet-screen" data-page="closet" aria-label="My closet" hidden>
+        <header class="topbar">
+          <button class="wordmark-button" id="home-button" type="button" aria-label="Back to welcome">
+            <img src="assets/pink flower button.png" alt="">
+            <span>thimbley</span>
+          </button>
+          <div class="topbar-actions">
+            <div class="weather-display">
+              <span class="weather-label" id="weather-label" aria-live="polite"></span>
+              <a class="weather-attribution" id="weather-attribution" href="https://open-meteo.com/" target="_blank" rel="noopener noreferrer" hidden>Weather data by Open-Meteo.com</a>
+            </div>
+            <button class="text-button" id="randomize-button" type="button" aria-label="randomize">
+              <img src="assets/randomize text.png" alt="randomize">
+            </button>
+            <button class="text-button" id="credits-button" type="button">
+              <img src="assets/credit button text.png" alt="Credits">
+            </button>
+          </div>
+        </header>
+
+        <div class="closet-layout">
+          <section class="doll-side" aria-label="Paper doll outfit">
+            <div class="doll-stage" id="doll-stage">
+              <img class="paper-doll" src="assets/paper doll.png" alt="Paper doll">
+              <img class="worn-item worn-accessory" id="worn-accessories" alt="">
+              <img class="worn-item worn-top" id="worn-tops" alt="">
+              <img class="worn-item worn-bottom" id="worn-pants" alt="">
+              <img class="worn-item worn-bottom" id="worn-skirts" alt="">
+              <img class="worn-item worn-dress" id="worn-dresses" alt="">
+            </div>
+          </section>
+
+          <section class="closet-panel" aria-labelledby="closet-heading">
+            <div class="panel-heading">
+              <img src="assets/my closet text.png" alt="" class="closet-title-art">
+              <h2 id="closet-heading" class="visually-hidden">My Closet</h2>
+            </div>
+            <nav class="category-tabs" aria-label="Clothing categories">
+              <button class="category-tab active" type="button" data-category="tops" aria-pressed="true"><img src="assets/tops section text.png" alt="Tops"></button>
+              <button class="category-tab" type="button" data-category="pants" aria-pressed="false"><img src="assets/pants section text.png" alt="Pants"></button>
+              <button class="category-tab" type="button" data-category="skirts" aria-pressed="false"><img src="assets/skirts section text.png" alt="Skirts"></button>
+              <button class="category-tab" type="button" data-category="dresses" aria-pressed="false"><img src="assets/dresses section text.png" alt="Dresses"></button>
+              <button class="category-tab" type="button" data-category="accessories" aria-pressed="false"><img src="assets/accessories section text.png" alt="Accessories"></button>
+            </nav>
+            <div class="closet-grid" id="closet-grid" aria-live="polite"></div>
+          </section>
+        </div>
+        <div class="stitched-border" aria-hidden="true"></div>
+      </section>
+
+      <section class="screen credits-screen" id="credits-screen" data-page="credits" aria-labelledby="credits-heading" hidden>
+        <header class="credits-header">
+          <button class="back-button" id="back-to-closet" type="button" aria-label="back">
+            <img src="assets/back text.png" alt="back">
+          </button>
+        </header>
+        <img src="assets/credits text.png" alt="" class="credits-title">
+        <h1 id="credits-heading" class="visually-hidden">Credits</h1>
+        <img src="assets/credit info text.png" alt="Fonts: Rascal by dafont.com and Yuji Mai on Canva. Background remover: remove.bg. Original image assets: Beiyu Wang. Image alterations: Claude." class="credits-info">
+        <img class="page-decoration credits-blue-stripe" src="assets/blue stripe button.png" alt="">
+        <img class="page-decoration credits-pink-flower" src="assets/pink flower button.png" alt="">
+        <img class="page-decoration credits-blue-star" src="assets/blue star button.png" alt="">
+        <img class="page-decoration credits-yellow-star" src="assets/yellow star button.png" alt="">
+        <img class="page-decoration credits-pink-star" src="assets/pink star button.png" alt="">
+        <img class="page-decoration credits-pink-white-flower" src="assets/pink white flower button.png" alt="">
+        <img class="page-decoration credits-white-button" src="assets/white button.png" alt="">
+        <div class="stitched-border" aria-hidden="true"></div>
+      </section>
+    </main>
+
+    <input id="photo-input" type="file" accept="image/*" multiple hidden>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>
